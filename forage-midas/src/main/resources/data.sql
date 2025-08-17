@@ -1,0 +1,10 @@
+INSERT INTO user_record (id, name, balance) VALUES (1,'waldorf', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (2,'statler', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (3,'gonzo', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (4,'kermit', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (5,'fozzie', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (6,'beaker', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (7,'honeydew', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (8,'animal', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (9,'rowlf', 5000.00);
+INSERT INTO user_record (id, name, balance) VALUES (10,'swedish_chef', 5000.00);

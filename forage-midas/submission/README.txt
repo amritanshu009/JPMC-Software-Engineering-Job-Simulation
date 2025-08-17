@@ -1,0 +1,34 @@
+Command:
+mvn -Dtest=TaskFiveTests test
+
+App config used:
+
+general:
+  kafka-topic: midas-transactions
+
+server:
+  port: 33400
+
+spring:
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers:localhost:9092}
+    consumer:
+      group-id: midas-core-consumer
+      auto-offset-reset: earliest
+
+  datasource:
+    url: jdbc:h2:mem:midas;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+    open-in-view: false
+
+  sql:
+    init:
+      mode: never
+
+  incentive:
+    url: http://localhost:8080/incentive
